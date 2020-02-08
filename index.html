@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio v1</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+  <div id="fullScreenOverlay" class="overlay">
+    <a id="closeBtn" href="#" class="closebtn">&times;</a>
+    <div class="overlay-content">
+      <a class="menu" href="#about">About</a>
+      <a class="menu" href="#experience">Experience</a>
+      <a class="menu" href="#work">Work</a>
+      <a class="menu" href="#contact">Contact</a>
+    </div>
+  </div>
+
+
+  
+  <section id="home">
+
+    <div class="container-hamburger text-dark">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+   
+    <div class="hero-content text-center">
+     
+      <small class="text-darkblue font-weight-bold">Hi, my name is</small>
+      <h2>Andres Bonilla</h2>
+      <p class="paragraph">I build things for the web.</p>
+      <img src="img/maloik.png" alt="">
+    </div>
+  </section>
+
+  <section id="about" class="bg-darkblue">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8 descripcion pb-5 p-sm-5">
+          <h2 class="sub-tittle"><b>About Me</b></h2>
+          <p>Hello! I'm Andres, a systems engineer based in Santa Cruz de la Sierra, BO who enjoys
+            building things that live on the internet. I develop exceptional websites and web apps that provide
+            intuitive, pixel-perfect user interfaces with efficient and modern backends.</p>
+          <p>
+            Here are a few technologies I've been working with recently:
+          </p>
+          <div class="row">
+            <div class="col">
+
+              <ul class="p-0">
+                <li class="media">
+                  <span class="icon-play_arrow mr-3"></span>
+                  <div class="media-body">
+                    <small>JavaScript (ES6+)</small>
+                  </div>
+                </li>
+                <li class="media">
+                  <span class="icon-play_arrow mr-3"></span>
+                  <div class="media-body">
+                    <small>React</small>
+                  </div>
+                </li>
+                <li class="media">
+                  <span class="icon-play_arrow mr-3"></span>
+                  <div class="media-body">
+                    <small>Node.js</small>
+                  </div>
+                </li>
+                <li class="media">
+                  <span class="icon-play_arrow mr-3"></span>
+                  <div class="media-body">
+                    <small>Typescript</small>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+            <div class="col">
+              <ul class="p-0">
+                <li class="media">
+                  <span class="icon-play_arrow mr-3"></span>
+                  <div class="media-body">
+                    <small>HTML & CSS</small>
+                  </div>
+                </li>
+                <li class="media">
+                  <span class="icon-play_arrow mr-3"></span>
+                  <div class="media-body">
+                    <small>Express</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 foto align-self-center text-center">
+          <div class="contenedor-descripcion-foto">
+            <a href="https://github.com/Nelwey" target="_blank">
+              <img id="yo" src="img/yo.jpg" alt="" class="img-fluid rounded">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="bg-light">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 col-lg-8 descripcion2 mb-5 p-sm-5">
+          <h2 class="sub-tittle"><b>Where I've Worked</b></h2>
+
+          <!-- lista-work -->
+          <div class="row">
+            <div class="col-sm-4 mb-3">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item mb-1" data-toggle="list" href="#multigym"
+                  role="tab"><small>Multigym</small></a>
+                <a class="list-group-item" data-toggle="list" href="#utepsa" role="tab"><small>Utepsa</small></a>
+              </div>
+            </div>
+
+            <div class=" col-sm-8 ">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane active" id="multigym" role="tabpanel">
+                  <h4>Front End Developer @ Multigym</h4>
+                  <small>Oct 2019 - Present</small>
+                  <ul class="p-0">
+                    <li class="media">
+                      <span class="icon-play_arrow  mr-3"></span>
+                      <div class="media-body">
+                        <small>Architected and implemented the front-end of multigym.fit</small>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <span class="icon-play_arrow  mr-3"></span>
+                      <div class="media-body">
+                        <small>Work with a variety of different languages, platforms, frameworks and content management
+                          systems such as JavaScript, Typescript, React and Wordpress.</small>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="utepsa" role="tabpanel">
+                  <h4>Beca Instrucción @ UTEPSA</h4>
+                  <small>Feb - Feb 2019</small>
+                  <ul class="p-0">
+                    <li class="media">
+                      <span class="icon-play_arrow  mr-3"></span>
+                      <div class="media-body">
+                        <small>Helped teachers and students providing technical support in the systems labs.</small>
+
+                      </div>
+                    </li>
+                    <li class="media">
+                      <span class="icon-play_arrow  mr-3"></span>
+                      <div class="media-body">
+                        <small>Performed preventive maintenance of the lab computers.</small>
+                      </div>
+                    </li>
+                    <li class="media">
+                      <span class="icon-play_arrow  mr-3"></span>
+                      <div class="media-body">
+                        <small>Put into practice my knowledge in research and web development areas.</small>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- work section -->
+      <div id="work" class="row">
+        <div class="col-12 descripcion2 p-sm-5">
+          <h2 class="sub-tittle"><b>Some Things I've Built</b></h2>
+
+          <div class="row mb-4">
+            <div class="position-relative col-12 col-md-7 contenedor-descripcion-foto">
+              <a href="https://nelwey.github.io/Juego1/" target="_blank">
+                <img src="./img/proyecto1.jpg" alt="" class="img-fluid img-work" target="_blank">
+              </a>
+              <div class="hero-content2 bg-darkblue text-light p-4 rounded text-center d-block d-md-none">
+                <h4><b>Mind Game</b></h4>
+                <div>
+                  <a href="https://github.com/Nelwey/Juego1" target="_blank">
+                    <span class="icon-github-square text-light"></span>
+                  </a>
+                  <a href="https://nelwey.github.io/Juego1/" target="_blank">
+                    <span class="icon-external-link text-light"></span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col d-none d-md-block">
+
+              <div class="row">
+                <div class="col-12 text-center">
+                  <small><b>Featured </b></small>
+                  <h4><b>Mind Game</b></h4>
+                </div>
+                <div class="col-12 text-center bg-darkblue-light text-light rounded p-3">
+                  <small>Can you solve the pastor's puzzle?</small>
+                </div>
+                <div class="col-12 ">
+                  <div class="row">
+                    <div class="col-2">
+                      <small>HTML</small>
+                    </div>
+                    <div class="col-2">
+                      <small>CSS</small>
+                    </div>
+                    <div class="col-2">
+                      <small>Jquery</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row">
+                    <div class="col-12 text-right">
+                      <a href="https://github.com/Nelwey/Juego1" target="_blank">
+                        <span class="icon-github-square"></span>
+                      </a>
+                      <a href="https://nelwey.github.io/Juego1/" target="_blank">
+                        <span class="icon-external-link"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row mb-4">
+            <div class="position-relative col-12 col-md-7 contenedor-descripcion-foto">
+              <a href="https://github.com/Nelwey/proyectoOneAcademy" target="_blank">
+                <img src="./img/proyecto2.jpg" alt="" class="img-fluid img-work" target="_blank">
+              </a>
+              <div class="hero-content2 bg-darkblue text-light p-4 rounded text-center d-block d-md-none">
+                <h4><b>Einstein's Riddle</b></h4>
+                <div>
+                  <a href="https://github.com/Nelwey/proyectoOneAcademy" target="_blank">
+                    <span class="icon-github-square text-light"></span>
+                  </a>
+                  <a href="https://nelwey.github.io/Juego1/" target="_blank">
+                    <span class="icon-external-link text-light"></span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col d-none d-md-block">
+
+              <div class="row">
+                <div class="col-12 text-center">
+                  <small><b>Featured </b></small>
+                  <h4><b>Einstein's Riddle</b></h4>
+                </div>
+                <div class="col-12 text-center bg-darkblue-light text-light rounded p-3">
+                  <small>It is claimed that 98% of the people are incapable of solving it</small>
+                </div>
+                <div class="col-12 ">
+                  <div class="row">
+                    <div class="col-2">
+                      <small>HTML</small>
+                    </div>
+                    <div class="col-2">
+                      <small>CSS</small>
+                    </div>
+                    <div class="col-2">
+                      <small>Jquery</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row">
+                    <div class="col-12 text-right">
+                      <a href="https://github.com/Nelwey/proyectoOneAcademy" target="_blank">
+                        <span class="icon-github-square"></span>
+                      </a>
+                      <a href="https://nelwey.github.io/proyectoOneAcademy/" target="_blank">
+                        <span class="icon-external-link"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="position-relative col-12 col-md-7 contenedor-descripcion-foto">
+              <a href="https://github.com/Nelwey/clima-app-node" target="_blank">
+                <img src="./img/proyecto3.jpg" alt="" class="img-fluid img-work" target="_blank">
+              </a>
+              <div class="hero-content2 bg-darkblue text-light p-4 rounded text-center d-block d-md-none">
+                <h4><b>Weather App</b></h4>
+                <div>
+                  <a href="https://github.com/Nelwey/clima-app-node" target="_blank">
+                    <span class="icon-github-square text-light"></span>
+                  </a>
+                  <a href="https://openweathermap.org/api" target="_blank">
+                    <span class="icon-cloud text-light"></span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+            <div class="col d-none d-md-block">
+
+              <div class="row">
+                <div class="col-12 text-center">
+                  <small><b>Featured </b></small>
+                  <h4><b>Weather app</b></h4>
+                </div>
+                <div class="col-12 text-center bg-darkblue-light text-light rounded p-3">
+                  <small>Built in node.js using Open weather API </small>
+                </div>
+                <div class="col-12 ">
+                  <div class="row">
+                    <div class="col-2">
+                      <small>Node.js</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row">
+                    <div class="col-12 text-right">
+                      <a href="https://github.com/Nelwey/clima-app-node" target="_blank">
+                        <span class="icon-github-square"></span>
+                      </a>
+                      <a href="https://openweathermap.org/api" target="_blank">
+                        <span class="icon-cloud"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="bg-darkblue text-light text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 mb-5">
+          <small><b>What 's Next?</b></small>
+          <h2 class="sub-tittle mb-3">Get In Touch</h2>
+          <p class="text-secondary">
+            Although I'm not currently looking for freelance opportunities, my inbox is always open. Whether for a
+            potential project or just to say hi, I'll try my best to answer your email!
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="mailto:nelwey1234@gmail.com" class="btn bg-outline-darkblue p-3">Say Hello</a> 
+  </section>
+
+
+   <footer class="bg-darkbluehard text-light">
+    <div class="container">
+      <div class="row justify-content-center p-5">
+        <div class="col-12 col-sm-6 text-center mb-3 mb-sm-0">
+          <a href="https://www.linkedin.com/in/joel-andres-bonilla-tellez-09649718b/" target="_blank"><span class="icon-linkedin-square mr-3"></span></a>
+          <a href="https://codepen.io/Nelwey" target="_blank"><span class="icon-codepen mr-3"></span></a>
+          <a href="https://www.instagram.com/nelwey.js/" target="_blank"><span class="icon-instagram mr-3"></span></a>
+          <a href="https://www.facebook.com/nelwey1234" target="_blank"><span class="icon-facebook-square mr-3"></span></a>
+        </div>
+        <div class="col-12 col-sm-6 text-center align-self-center">
+          <small><b>Designed & Built by Andres Bonilla</b></small>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
