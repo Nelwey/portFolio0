@@ -243,6 +243,7 @@ footer span:hover{
   top: 3%;
   left: 2.5%;
   position: fixed;
+  padding: 10px 15px;
   z-index: 1;
 
 }
@@ -251,6 +252,7 @@ footer span:hover{
   width: 35px;
   height: 5px;
   margin: 6px 0;
+  
   transition: 0.4s;
   background-color: #242424;
 }
@@ -331,6 +333,11 @@ footer span:hover{
   }
   h2.sub-tittle{
     font-size: 1.7rem;
+  }
+  .container-hamburger {
+    padding: 7px 10px;
+    z-index: 1;
+  
   }
  
 }
