@@ -1,29 +1,31 @@
 $(() => {
 
-
-  
+  clicked = true;
 
   $(".container-hamburger").click(function () {
-    $(this).toggleClass("change");
-    $("#fullScreenOverlay").css("width", "100%");
-    $(this).css("background-color", "rgba(0,0,0, 0.1)");
+
+    if (clicked) {
+
+      $(this).toggleClass("change");
+      $("#fullScreenOverlay").css("width", "100%");
+      $(this).css("background-color", "rgba(0,0,0, 0.1)");
+
+      clicked = false;
+
+    } else {
+
+      $("#fullScreenOverlay").css("width", "0%");
+      $(".container-hamburger").toggleClass("change");
+
+      clicked = true;
+    }
+
   });
 
-
-  $("#closeBtn").click(function () {
+  $('.menu').click(() => {
     $("#fullScreenOverlay").css("width", "0%");
     $(".container-hamburger").toggleClass("change");
-    $('.container-hamburger').css("background-color", "#FBFBFD");
-    
+    clicked = true;
   });
 
-  $('.menu').click(()=>{
-    $("#fullScreenOverlay").css("width", "0%");
-    $('.container-hamburger').css("background-color", "#FBFBFD");
-    $(".container-hamburger").toggleClass("change");
-  });
-
-
- 
- 
 });
